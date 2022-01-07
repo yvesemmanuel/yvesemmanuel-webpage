@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+body{
+	margin: 0;
+	line-height: 1.5;
+	font-size: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+
+.nav-bar{
+	width: 180px;
+	height: 100%;
+	background-color: #F7F7F7;
+	border-right: 2px solid #CFCFCF;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.nav-bar .nav-list{
+	width: 90px;
+	height: 215px;
+	position: absolute;
+	margin: auto;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.nav-bar .nav-list li{
+	display: block;
+	margin: 0 -40px;
+	width: 130px;
+}
+
+.nav-bar .nav-list li a{
+	font-size: 18px;
+	color: #2C001E;
+	border-bottom: 1.5px solid #CFCFCF;
+	text-decoration: none;
+	text-transform: capitalize;
+	display: block;
+	margin: 25px 0;
+	line-height: 35px;
+}
+
+.nav-bar .nav-list li a .fa{
+	margin-right: 15px;
+}
+
+.nav-bar .design-ref{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin: 600px 0;
+	color: #5E2750;
+}
+
+.nav-bar .design-ref .fab{
+	color: #E95420;
+	margin-right: 10px;
+}
