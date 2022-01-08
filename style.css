@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 body{
 	margin: 0;
@@ -9,6 +10,17 @@ body{
 	font-weight: 400;
 }
 
+.container{
+	width: 100%;
+}
+
+.home .container{
+	/* background-color: red; */
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+
+			/* NAV BAR */
 .nav-bar{
 	width: 180px;
 	height: 100%;
@@ -62,4 +74,55 @@ body{
 .nav-bar .design-ref .fab{
 	color: #E95420;
 	margin-right: 10px;
+}
+
+			/* HOME */
+.home{
+	min-height: 100vh;
+	height: 100px;
+	display: -ms-flexbox; /*vendor prefix for Microsoft browsers*/
+	display: flex;
+}
+
+.home .intro{
+	text-align: center;
+	margin: 40px 0 100px 240px;
+}
+
+.home .intro img{
+	height: 220px;
+	width: 220px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.home .intro h1{
+	font-size: 30px;
+	color: #302e4d;
+	margin: 20px 0px;
+}
+
+.home .intro p{
+	font-size: 16px;
+	line-height: 15px;
+	color: #2C001E;
+	margin: 120px 0;
+}
+
+.home .intro .social-links a{
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	border-radius: 50%;
+	background-color: #E95420;
+	color: white;
+	display: inline-block;
+	margin: 0 10px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.home .intro .social-links a:hover{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
