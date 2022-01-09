@@ -10,14 +10,29 @@ body{
 	font-weight: 400;
 }
 
-.container{
-	width: 100%;
+.section{
+	/* background-color: red; */
+	min-height: 100vh;
+	display: block;
+	position: fixed;
+	overflow-x: hidden;
+	overflow-y: auto; /*set scrollbar if and only if content overflows*/
+	opacity: 1;
+	z-index: 0; /* sections must be the last layer */
+	left: 180px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0 30px;
+	/* -webkit-transition: all 0.3s ease; */
+	/* transition: all 0.3s ease; */
 }
 
-.home .container{
-	/* background-color: red; */
-	padding-top: 60px;
-	padding-bottom: 70px;
+.container{
+	/* background-color: blue; */
+	max-width: 1100px;
+	width: 100%;
+	margin: auto;
 }
 
 			/* NAV BAR */
@@ -76,17 +91,21 @@ body{
 	margin-right: 10px;
 }
 
-			/* HOME */
+/* HOME */
 .home{
+	/* background-color: black; */
 	min-height: 100vh;
 	height: 100px;
 	display: -ms-flexbox; /*vendor prefix for Microsoft browsers*/
 	display: flex;
 }
 
+.home .container{
+	padding: 60px 0 60px 0;
+}
+
 .home .intro{
 	text-align: center;
-	margin: 40px 0 100px 240px;
 }
 
 .home .intro img{
@@ -99,14 +118,13 @@ body{
 .home .intro h1{
 	font-size: 30px;
 	color: #302e4d;
-	margin: 20px 0px;
 }
 
 .home .intro p{
 	font-size: 16px;
 	line-height: 15px;
 	color: #2C001E;
-	margin: 120px 0;
+	margin: 120px 0 0 0;
 }
 
 .home .intro .social-links a{
@@ -114,8 +132,8 @@ body{
 	width: 35px;
 	line-height: 35px;
 	border-radius: 50%;
-	background-color: #E95420;
 	color: white;
+	background-color: #E95420;
 	display: inline-block;
 	margin: 0 10px;
 	-webkit-transition: all 0.3s ease;
