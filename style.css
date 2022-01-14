@@ -92,7 +92,7 @@ body{
 
 .section .container{
 	padding-top: 40px;
-	padding-bottom: 49px;
+	padding-bottom: 15px;
 }
 
 .row{
@@ -292,6 +292,7 @@ body{
 
 .about .about-content .personal-info .buttons{
 	margin-top: 30px;
+	/* margin: 30px auto 0; */
 }
 
 .about .about-content .personal-info .buttons .btn{
@@ -320,7 +321,6 @@ body{
 }
 
 .about .about-content .skills{
-	/* background-color: red; */
 	-ms-flex: 0 0 50%;
 	flex: 0 0 50%;
 	max-width: 50%;
@@ -332,8 +332,6 @@ body{
 	background-color: #77216F;
 	padding: 8px;
 	border-radius: 7px;
-	/* -ms-flex: 0 0 100%;
-	flex: 0 0 100%; */
 	width: 200px;
 	text-align: center;
 	margin: 0 auto 24px;
@@ -356,28 +354,122 @@ body{
 	margin: 1px 0;
 }
 
+.about .about-content .skills span{
+	font-size: 19px;
+	font-weight: 600;
+}
+
 .about .about-content .skills span.python{
 	font-family: flux;
-	font-size: 19px;
-	color: #646464;
-	font-weight: 600;
 }
 
 .about .about-content .skills span.cpp{
 	font-family: flux;
-	font-size: 19px;
-	color: #044F88;
-	font-weight: 600;
 }
 
 .about .about-content .skills span.java{
 	font-family: QuattrocentoSans;
-	font-size: 19px;
-	color: #f30000;
-	font-weight: 600;
 }
 
 .about .about-content .skills span.web{
 	font-size: 16px;
+}
+
+.about .about-content .certifications{
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	margin-top: 30px;
+}
+
+.about .about-content .education{
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	margin-top: 30px;
+}
+
+.about .about-content h3.title{
+	font-size: 24px;
+	margin-bottom: 10px;
 	font-weight: 700;
+	color: #2C001E;
+}
+
+.about .about-content .timeline-box{
+	/* background-color: red; */
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+.about .about-content .timeline{
+	background-color: #F7F7F7;
+	padding: 15px 15px;
+	border: 2px solid #CCCCCCaa;
+	border-radius: 10px;
+	width: 100%;
+	position: relative;
+	/* height: 928px; */
+}
+
+.about .about-content .timeline .timeline-item{
+	position: relative;
+	padding-left: 37px;
+	padding-bottom: 25px;
+}
+
+.about .about-content .timeline .timeline-item:last-child{ /* last item should have no padding at bottom */
+	padding-bottom: 0px;
+}
+
+.about .about-content .timeline .timeline-title{
+	font-weight: 700;
+	font-size: 19px;
+	margin-bottom: 8px;
+	text-transform: capitalize;
+	color: #2C001E;
+}
+
+.about .about-content .timeline .timeline-item::before{
+	background-color: #E95420;
+	content: '';
+	width: 2px;
+	position: absolute;
+	height: 100%;
+	left: 7px ;
+	top: 0;
+}
+
+.about .about-content .timeline .circle-dot{
+	background-color: #E95420;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	height: 15px;
+	width: 15px;
+	left: 0px;
+	border-radius: 50%;
+}
+
+.about .about-content .timeline .timeline-date{
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 12px;
+	color: #2C001E;
+}
+
+.about .about-content .timeline .timeline-date .fa{
+	margin-right: 5px;
+}
+
+.about .about-content .timeline .timeline-date i{
+	color: #000000;
+}
+
+.about .about-content .timeline .timeline-text{
+	font-size: 16px;
+	line-height: 25px;
+	color: #2C001E;
+	margin: 0;
 }
