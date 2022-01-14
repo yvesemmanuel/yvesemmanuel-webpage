@@ -2,6 +2,11 @@
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+@font-face { font-family: Flux; src: url('files/fonts/Flux\ Regular.otf'); }
+
+@font-face { font-family: QuattrocentoSans; src: url('files/fonts/QuattrocentoSans-Regular.ttf'); }
+
+
 .hidden{ /* this class is used to temporarily hide finished sections' visualization */
 	display: none !important;
 }
@@ -251,9 +256,128 @@ body{
 }
 
 .about .about-content .about-text p{
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 25px;
 	color: #2C001E;
 	margin: 0;
 }
 
+.about .about-content .personal-info{
+	-ms-flex: 0 0 60%;
+	flex: 0 0 60%;
+	max-width: 50%;
+	margin-top: 40px;
+}
+
+.about .about-content .personal-info .info-item{
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%; 
+}
+
+.about .about-content .personal-info .info-item p{
+	font-weight: 600;
+	padding: 10px 0;
+	font-size: 17px;
+	color: #2C001E;
+	border-bottom: 1.5px solid #CCCCCCaa;
+}
+
+.about .about-content .personal-info .info-item p span{
+	color: #2C001E;
+	margin-left: 4px;
+	font-weight: 380;
+	display: inline-block;
+}
+
+.about .about-content .personal-info .buttons{
+	margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn{
+	background-color: #E95420;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+.btn{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 380;
+	padding: 12px 35px;
+	color: #ffffff;
+	border-radius: 40px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	display: inline-block;
+	white-space: nowrap;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.about .about-content .skills{
+	/* background-color: red; */
+	-ms-flex: 0 0 50%;
+	flex: 0 0 50%;
+	max-width: 50%;
+	margin-top: 15px;
+}
+
+.about .about-content .skills .skills-title{
+	color: #FFFFFF;
+	background-color: #77216F;
+	padding: 8px;
+	border-radius: 7px;
+	/* -ms-flex: 0 0 100%;
+	flex: 0 0 100%; */
+	width: 200px;
+	text-align: center;
+	margin: 0 auto 24px;
+}
+
+.about .about-content .skills .skill-item{
+	padding: 7px;
+	border-radius: 2px;
+	border: 2px solid #CCCCCCaa;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 80%;
+	margin: 0 auto 10px;
+}
+
+.about .about-content .skills .skill-item p{
+	font-weight: 400;
+	font-size: 17px;
+	color: #000000;
+	margin: 1px 0;
+}
+
+.about .about-content .skills span.python{
+	font-family: flux;
+	font-size: 19px;
+	color: #646464;
+	font-weight: 600;
+}
+
+.about .about-content .skills span.cpp{
+	font-family: flux;
+	font-size: 19px;
+	color: #044F88;
+	font-weight: 600;
+}
+
+.about .about-content .skills span.java{
+	font-family: QuattrocentoSans;
+	font-size: 19px;
+	color: #f30000;
+	font-weight: 600;
+}
+
+.about .about-content .skills span.web{
+	font-size: 16px;
+	font-weight: 700;
+}
