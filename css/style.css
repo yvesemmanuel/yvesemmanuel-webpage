@@ -473,3 +473,78 @@ body{
 	color: #2C001E;
 	margin: 0;
 }
+
+/* projetcs section */
+.projects .container{
+	padding-bottom: 40px;
+}
+
+.projects .projects-item{
+	-ms-flex: 0 0 33.33%;
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	margin-bottom: 30px;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.projects .projects-item .projects-item-inner{
+	background-color: #fdf9ff;
+	border: 1px solid #d4d4e3;
+	border-radius: 10px;
+	padding: 30px 15px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.projects .projects-item .projects-item-inner:hover{
+	-webkit-box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
+	box-shadow: 0px 0px 11px grey;
+}
+
+.projects .projects-item .projects-item-inner .icon{
+	height: 60px;
+	width: 60px;
+	display: block;
+	margin: 0 auto 30px;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.projects .projects-item .projects-item-inner .icon .fa{
+	color: #E95420;
+}
+
+.projects .projects-item .projects-item-inner:hover .icon{
+	background-color: #E95420;
+}
+
+.projects .projects-item .projects-item-inner .icon .fa{
+	font-size: 40px;
+	line-height: 60px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.projects .projects-item .projects-item-inner:hover .icon .fa{
+	font-size: 25px;
+	color: #ffffff;
+}
+
+.projects .projects-item .projects-item-inner h4{
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #302e4d;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.projects .projects-item .projects-item-inner p{
+	font-size: 16px;
+	color: #504e70;
+	line-height: 25px;
+	margin: 0;
+}
