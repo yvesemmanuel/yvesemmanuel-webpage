@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -26,6 +27,7 @@
                     <li><a href="#home" class="active"><i class="fa fa-home"></i><b>home</b></a></li>
                     <li><a href="#about"><i class="fa fa-user"></i><b>about me</b></a></li>
                     <li><a href="#projects"><i class="fa fa-list"></i><b>projects</b></a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i><b>contact</b></a></li>
                 </ul>
 
                 <!--design reference-->
@@ -43,7 +45,7 @@
                 <div class="container">
 
                     <div class="intro">
-                        <img src="media-fonts/Eazy-E32.webp" alt="Yves Emmanuel's photo">
+                        <img src="media-fonts/penguin.png" alt="Yves Emmanuel's photo">
                         <h1>Yves Emmanuel</h1>
                         <div class="social-links">
                             <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -379,6 +381,83 @@
 
             </section>
             <!-- project sections end -->
+
+            <section class="contact section" id="contact">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+						<!--contact-info item-->
+						<div class="contact-info-item padd-15">
+							<div class="icon"><i class="fa fa-phone"></i></div>
+								<h4>call me on</h4>
+								<p>(81) 98729-8820</p>
+						</div>
+						<!--contact-info item end-->
+
+						<!--contact-info item-->
+						<div class="contact-info-item padd-15">
+							<div class="icon"><i class="fa fa-envelope"></i></div>
+								<h4>email</h4>
+								<p>yefo@cin.ufpe.br</p>
+						</div>
+						<!--contact-info item end-->
+
+					</div>
+
+                    <div class="row">
+						<form class="contact-form padd-15">
+
+							<div class="row">
+								<div class="form-item half-line padd-15">
+									<div class="form-group">
+										<input type="text" class="form-control" id="senderName"
+                                        placeholder="Name*">
+									</div>
+								</div>
+
+								<div class="form-item half-line padd-15">
+									<div class="form-group">
+										<input type="text" class="form-control" id = "senderEmail" 
+                                        placeholder="Email*">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								 <div class="form-item full-line padd-15">
+									<div class="form-group">
+										<input type="text" class="form-control" id = "messageSubject"
+                                        placeholder="Subject*">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								 <div class="form-item full-line padd-15">
+									<div class="form-group">
+										<textarea class="form-control" id="messageToSend" placeholder="Your Message..."></textarea>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								 <div class="full-line padd-15">
+									<button type="submit" class="btn" id="sendBtn">Send Message</button>
+								</div>
+							</div>
+
+						</form>
+					</div>
+
+                </div>
+            </section>
 
         </div>
 
