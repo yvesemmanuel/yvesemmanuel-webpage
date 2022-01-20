@@ -412,19 +412,21 @@
 					</div>
 
                     <div class="row">
-						<form class="contact-form padd-15">
+						<form class="contact-form padd-15" action="https://api.staticforms.xyz/submit" method="POST">
+
+                            <input type="hidden" name="accessKey" value="a8f78318-25c2-42a4-b4e4-a71e2222c746">
 
 							<div class="row">
 								<div class="form-item half-line padd-15">
 									<div class="form-group">
-										<input type="text" class="form-control" id="senderName"
+										<input type="text" class="form-control" name="name"
                                         placeholder="Name*">
 									</div>
 								</div>
 
 								<div class="form-item half-line padd-15">
 									<div class="form-group">
-										<input type="text" class="form-control" id = "senderEmail" 
+										<input type="email" class="form-control" name="email"
                                         placeholder="Email*">
 									</div>
 								</div>
@@ -433,7 +435,7 @@
 							<div class="row">
 								 <div class="form-item full-line padd-15">
 									<div class="form-group">
-										<input type="text" class="form-control" id = "messageSubject"
+										<input type="text" class="form-control" name="subject"
                                         placeholder="Subject*">
 									</div>
 								</div>
@@ -442,7 +444,7 @@
 							<div class="row">
 								 <div class="form-item full-line padd-15">
 									<div class="form-group">
-										<textarea class="form-control" id="messageToSend" placeholder="Your Message..."></textarea>
+										<textarea class="form-control" name="message" placeholder="Your Message..."></textarea>
 									</div>
 								</div>
 							</div>
@@ -452,6 +454,8 @@
 									<button type="submit" class="btn" id="sendBtn">Send Message</button>
 								</div>
 							</div>
+
+                            <input type="hidden" name="redirectTo" value="https://yvesemmanuel.github.io">
 
 						</form>
 					</div>
