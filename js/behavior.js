@@ -77,3 +77,43 @@ function asideSectionTogglerBtn() {
         allSection[i].classList.toggle("navOpen");
     }
 }
+
+function verifyEmail(userEmail) {
+    if (userEmail.value === '') {
+        userEmail.setCustomValidity("Please, I am expecting your e-mail address!");
+    }
+    else if (userEmail.validity.typeMismatch) {
+        userEmail.setCustomValidity("Please, I am expecting a valid e-mail address!");
+        userEmail.reportValidity();
+    }
+    else {
+        userEmail.setCustomValidity("");
+    }
+}
+
+function verifyName(userName) {
+    if (userName.value === '') {
+        userName.setCustomValidity("Please, I am expecting your name!");
+    }
+    else {
+        userName.setCustomValidity("");
+    }
+}
+
+function verifySubject(messageSubject) {
+    if (messageSubject.value === '') {
+        messageSubject.setCustomValidity("Please, I am expecting for the message subject!");
+    }
+    else {
+        messageSubject.setCustomValidity("");
+    }
+}
+
+function verifyMessage(message) {
+    if (message.value === '') {
+        message.setCustomValidity("Please, I am expecting your message!");
+    }
+    else {
+        message.setCustomValidity("");
+    }
+}
