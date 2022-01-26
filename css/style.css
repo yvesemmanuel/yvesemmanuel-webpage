@@ -599,10 +599,6 @@ body {
 }
 
 /* PROJECT SECTION */
-.project .container {
-    padding-bottom: 40px;
-}
-
 .project .project-item {
     max-width: 50%;
     display: flex;
