@@ -282,7 +282,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     font-weight: 620;
-    color: #5E2750aa;
+    color: #896681;
 
     margin: auto;
 }
@@ -429,7 +429,7 @@ body {
 }
 
 .about .about-content .personal-info .buttons .btn {
-    background-color: #E95420;
+    background-color: #c6471a;
 
     margin-right: 15px;
     margin-top: 10px;
@@ -438,6 +438,7 @@ body {
 .btn {
     display: inline-block;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
     font-weight: 380;
     color: #ffffff;
     border: none;
@@ -766,7 +767,7 @@ body {
 }
 
 .contact .contact-form .btn{
-    background-color: #E95420;
+    background-color: #c6471a;
 	height: 50px;
 
 	padding: 0 50px;
