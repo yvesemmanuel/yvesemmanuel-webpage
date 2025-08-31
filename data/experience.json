@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Globo",
+    "period": "Jul 2025 -- Present",
+    "description": [
+      "Engineered a multi-agent framework with Google ADK for chatbot integration with Slack and Teams apps."
+    ]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Neurotech [B3]",
+    "period": "Apr 2023 -- Aug 2025",
+    "description": [
+      "Engineered cloud-based libraries to optimize ML experiments lifecycles, incorporating AutoML tools to streamline data scientists' workflows.",
+      "Implemented the model monitoring framework for all company ML models, delivering observability reports that enhance client decision-making and model retraining based on data drift.",
+      "Automated key ML workflows using a scalable, cloud-based orchestration architecture, ensuring secure and efficient model development and deployment.",
+      "Developed an automated system for analyzing debt collection calls using speech-to-text and LLM-based NLP agents, significantly reducing manual analysis time and improving debt management efficiency."
+    ],
+    "reference": "https://valor.globo.com/financas/noticia/2025/06/11/com-ia-generativa-banco-bv-recupera-em-2-meses-r-8-milhes-em-crditos-atrasados.ghtml"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Super NINA",
+    "period": "Sep 2022 -- Apr 2023",
+    "description": [
+      "Designed and implemented a chatbot leveraging LLM agents to provide a secure and user-friendly platform for reporting harassment on WhatsApp.",
+      "Managed serverless API orchestration to process and analyze urban harassment data, optimizing reporting workflows.",
+      "Developed analytical dashboards and integrated solutions with public agencies to generate actionable insights for enhancing community safety."
+    ]
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Tribunal de Contas do Estado de Pernambuco",
+    "period": "Feb 2022 -- Jan 2023",
+    "description": [
+      "Built a framework to analyze and visualize payment delays in public contracts, helping auditors prioritize oversight across Pernambuco municipalities.",
+      "Created a dashboard to visualize delay indices, enhancing transparency and accountability.",
+      "Presented the framework at the XIX Brazilian Symposium on Information Systems, highlighting its impact on public governance."
+    ],
+    "reference": "https://sol.sbc.org.br/index.php/sbsi_estendido/article/view/24603/24424"
+  }
+]

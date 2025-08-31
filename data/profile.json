@@ -1,0 +1,16 @@
+{
+  "name": "Yves Emmanuel",
+  "title": "Machine Learning Engineer",
+  "location": "Recife, PE",
+  "email": "yveemmanuel@gmail.com",
+  "phone": "(81) 987298820",
+  "linkedin": "https://www.linkedin.com/in/yvesemmanuel",
+  "bio": "Machine Learning Engineer with expertise in building scalable ML systems and implementing MLOps practices. Currently working at Globo, previously at Neurotech [B3], with a focus on cloud-based AI solutions and automated ML workflows.",
+  "education": {
+    "degree": "Bachelor of Science in Computer Science",
+    "institution": "Universidade Federal de Pernambuco",
+    "location": "Recife, PE",
+    "period": "Feb 2020 -- Oct 2024",
+    "focus": "Software Engineering, Natural Language Processing, Transformer Architecture, Artificial Intelligence"
+  }
+}

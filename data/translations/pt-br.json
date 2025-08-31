@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Engenharia de ML & IA",
+    "subtitle": "Especializado em MLOps, Engenharia de IA e Soluções de ML Baseadas em Nuvem",
+    "cta_contact": "Entre em Contato",
+    "cta_projects": "Ver Projetos"
+  },
+  "about": {
+    "title": "Sobre",
+    "bio": "Engenheiro de Machine Learning com expertise em construção de sistemas de ML escaláveis e implementação de práticas de MLOps. Atualmente trabalhando na Globo, anteriormente na Neurotech [B3], com foco em soluções de IA baseadas em nuvem e fluxos de trabalho de ML automatizados.",
+    "location": "Localização:",
+    "email": "Email:",
+    "phone": "Telefone:",
+    "linkedin": "LinkedIn:",
+    "github": "GitHub:"
+  },
+  "experience": {
+    "title": "Experiência"
+  },
+  "projects": {
+    "title": "Projetos"
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "intro": "Expertise abrangente em stack moderno de engenharia de ML, desde infraestrutura em nuvem até sistemas de IA em produção",
+    "expertise_title": "Áreas de Especialização",
+    "cloud_platforms": "Plataformas de Nuvem:",
+    "cloud_desc": "Experiência extensiva em AWS (3+ anos), atualmente expandindo expertise em GCP",
+    "ml_production": "Produção de ML:",
+    "ml_production_desc": "Pipelines de MLOps end-to-end, monitoramento de modelos e retreinamento automatizado",
+    "ai_engineering": "Engenharia de IA:",
+    "ai_engineering_desc": "Integração de LLMs, sistemas multi-agentes e aplicações de IA em produção",
+    "data_engineering": "Engenharia de Dados:",
+    "data_engineering_desc": "Pipelines de dados escaláveis, processamento em tempo real e plataformas de analytics"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Mensagem",
+    "send": "Enviar Mensagem",
+    "sending": "Enviando...",
+    "success": "Obrigado! Sua mensagem foi enviada com sucesso.",
+    "error": "Falha ao enviar mensagem. Por favor, tente novamente.",
+    "validation": {
+      "required": "Este campo é obrigatório",
+      "email_invalid": "Por favor, insira um endereço de email válido",
+      "name_short": "Nome deve ter pelo menos 2 caracteres",
+      "message_short": "Mensagem deve ter pelo menos 10 caracteres"
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro ao carregar conteúdo. Por favor, atualize a página."
+  }
+}
