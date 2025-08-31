@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Previsão de Preço do Real",
+    "description": "Projeto de machine learning para prever taxas de câmbio do Real Brasileiro para Dólar Americano com análise de séries temporais, comparando modelos LSTM e ARIMA.",
+    "technologies": ["Python", "LSTM", "ARIMA", "Análise de Séries Temporais", "Machine Learning"],
+    "githubUrl": "https://github.com/yvesemmanuel/brl-dolar-historical-series",
+    "liveUrl": null,
+    "featured": true
+  },
+  {
+    "title": "Transformações de Baixo Posto do Espaço Sintático-Semântico em Múltiplas Tarefas de Linguagem Natural",
+    "description": "Avaliei LoRA-multi para ajuste fino eficiente de parâmetros de modelos Transformer (BERT, DistilBERT) em múltiplas tarefas de NLP usando a biblioteca PEFT do HuggingFace e X-LoRA para estratégia Mixture-of-Expert.",
+    "technologies": ["Python", "BERT", "DistilBERT", "LoRA", "HuggingFace", "PEFT", "X-LoRA"],
+    "githubUrl": null,
+    "liveUrl": null,
+    "reference": "https://www.cin.ufpe.br/~tg/2024-1/TGs_CC/tg_yefo.pdf",
+    "featured": true
+  },
+  {
+    "title": "Equidade em Modelos de Linguagem de Média Escala",
+    "description": "Analisei equidade de gênero e vieses sociais em modelos de linguagem de escala média usando Python, Hugging Face Transformers e Matplotlib.",
+    "technologies": ["Python", "HuggingFace Transformers", "Matplotlib", "Análise de Viés", "Equidade"],
+    "githubUrl": "https://github.com/yvesemmanuel/machine_learning/blob/main/xai/fairness-in-medium-scale-llms.ipynb",
+    "liveUrl": null,
+    "featured": true
+  },
+  {
+    "title": "Algoritmo Genético para Previsões de Jogos da NBA",
+    "description": "Projetei um modelo de previsão de jogos da NBA usando algoritmo genético para otimização de características, implementado em Python com NumPy e Pandas.",
+    "technologies": ["Python", "Algoritmo Genético", "NumPy", "Pandas", "Machine Learning"],
+    "githubUrl": "https://github.com/yvesemmanuel/nba-decider",
+    "liveUrl": null,
+    "featured": false
+  },
+  {
+    "title": "NLP com Tweets de Desastre",
+    "description": "Desenvolvi e comparei modelos de ML para o desafio Kaggle de NLP com Tweets de Desastre, incluindo Regressão Logística, Naive Bayes e DistilBERT ajustado com LoRA (79.7% de precisão), usando Scikit-learn, Hugging Face Transformers e Matplotlib.",
+    "technologies": ["Python", "Scikit-learn", "DistilBERT", "LoRA", "HuggingFace", "NLP", "Kaggle"],
+    "githubUrl": "https://github.com/yvesemmanuel/nlp_disaster_tweets",
+    "liveUrl": null,
+    "featured": false
+  },
+  {
+    "title": "API de Lista de Espera Confiável",
+    "description": "Desenvolvi um sistema de gerenciamento de lista de espera em tempo real com ajuste dinâmico de prioridade e sistema de penalidade usando FastAPI, SQLAlchemy, Pydantic e Docker.",
+    "technologies": ["Python", "FastAPI", "SQLAlchemy", "Pydantic", "Docker", "Desenvolvimento de API"],
+    "githubUrl": "https://github.com/yvesemmanuel/waitlist-api",
+    "liveUrl": null,
+    "featured": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "AWS Cloud Quest (2025)",
+    "items": [
+      "Cloud Practitioner",
+      "Machine Learning", 
+      "Generative AI Practitioner"
+    ]
+  },
+  {
+    "name": "Mathematics for Machine Learning and Data Science Specialization (2025)",
+    "items": [
+      "Linear Algebra for Machine Learning and Data Science",
+      "Calculus for Machine Learning and Data Science"
+    ]
+  },
+  {
+    "name": "Natural Language Processing Specialization (2023-2024)",
+    "items": [
+      "NLP with Classification and Vector Spaces",
+      "NLP with Probabilistic Models", 
+      "NLP with Sequence Models",
+      "NLP with Attention Models"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "ML & AI Engineering",
+    "subtitle": "Specializing in MLOps, AI Engineering, and Cloud-Based ML Solutions",
+    "cta_contact": "Get In Touch",
+    "cta_projects": "View Projects"
+  },
+  "about": {
+    "title": "About",
+    "bio": "Machine Learning Engineer with expertise in building scalable ML systems and implementing MLOps practices. Currently working at Globo, previously at Neurotech [B3], with a focus on cloud-based AI solutions and automated ML workflows.",
+    "location": "Location:",
+    "email": "Email:",
+    "phone": "Phone:",
+    "linkedin": "LinkedIn:",
+    "github": "GitHub:"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "intro": "Comprehensive expertise in modern ML engineering stack, from cloud infrastructure to production AI systems",
+    "expertise_title": "Key Expertise Areas",
+    "cloud_platforms": "Cloud Platforms:",
+    "cloud_desc": "Extensive AWS experience (3+ years), currently expanding GCP expertise",
+    "ml_production": "ML Production:",
+    "ml_production_desc": "End-to-end MLOps pipelines, model monitoring, and automated retraining",
+    "ai_engineering": "AI Engineering:",
+    "ai_engineering_desc": "LLM integration, multi-agent systems, and production AI applications",
+    "data_engineering": "Data Engineering:",
+    "data_engineering_desc": "Scalable data pipelines, real-time processing, and analytics platforms"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you! Your message has been sent successfully.",
+    "error": "Failed to send message. Please try again.",
+    "validation": {
+      "required": "This field is required",
+      "email_invalid": "Please enter a valid email address",
+      "name_short": "Name must be at least 2 characters long",
+      "message_short": "Message must be at least 10 characters long"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error loading content. Please refresh the page."
+  }
+}

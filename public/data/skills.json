@@ -1,0 +1,80 @@
+{
+  "Cloud Platforms": [
+    "AWS (3+ years)",
+    "AWS EC2",
+    "AWS VPC", 
+    "AWS EFS",
+    "AWS S3",
+    "AWS Lambda",
+    "AWS EventBridge",
+    "AWS API Gateway",
+    "GCP Vertex AI",
+    "Google Cloud Platform",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Terragrunt"
+  ],
+  "Data Engineering": [
+    "AWS RDS",
+    "AWS Data Firehose",
+    "AWS DynamoDB", 
+    "AWS Athena",
+    "AWS Glue",
+    "AWS EMR",
+    "SQL",
+    "Apache Spark"
+  ],
+  "MLOps & Orchestration": [
+    "AWS SageMaker AI",
+    "MLflow",
+    "ONNX",
+    "Apache Airflow",
+    "Kubeflow",
+    "GCP Vertex AI"
+  ],
+  "Machine Learning": [
+    "Scikit-learn",
+    "ONNX",
+    "TensorFlow",
+    "Hugging Face Transformers",
+    "Time Series Forecasting"
+  ],
+  "AI Engineering": [
+    "AWS Rekognition",
+    "AWS Textract",
+    "AWS Polly",
+    "AWS Transcribe",
+    "AWS Comprehend",
+    "AWS Lex",
+    "AWS Bedrock",
+    "AWS Guardrails",
+    "AWS OpenSearch Service",
+    "AWS Translate",
+    "AWS Q",
+    "Langflow",
+    "Langfuse",
+    "LangChain",
+    "OpenAI API",
+    "Gemini API",
+    "Google ADK"
+  ],
+  "Development": [
+    "Python",
+    "Bash",
+    "FastAPI",
+    "Flask",
+    "Swagger",
+    "Git"
+  ],
+  "Messaging & Streaming": [
+    "AWS SQS",
+    "Apache Kafka"
+  ],
+  "Package Management": [
+    "AWS CodeBuild",
+    "AWS CodeArtifact",
+    "uv",
+    "Poetry"
+  ]
+}

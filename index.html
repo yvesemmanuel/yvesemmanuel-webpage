@@ -1,439 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Yves Emmanuel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-
-<body>
-
-    <!--CONTENT CONTAINER-->
-    <div class="main-container">
-
-        <div class="aside">
-
-            <!-- mobile nav toggler button -->
-            <div class="nav-toggler">
-                <span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmanuel - ML & AI Services</title>
+    <meta name="description" content="Machine Learning Engineer specializing in MLOps, AI Engineering, and cloud-based ML solutions. Experience with AWS, Python, and modern ML frameworks." />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="hero" class="hero">
+        <nav class="nav">
+          <div class="nav-container">
+            <div class="nav-brand">Emmanuel Company Ltda.</div>
+            <ul class="nav-menu">
+              <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+              <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+              <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+              <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+              <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+              <button id="lang-en" class="lang-btn active" data-lang="en">EN</button>
+              <span class="lang-separator">|</span>
+              <button id="lang-pt" class="lang-btn" data-lang="pt-br">PT</button>
             </div>
+          </div>
+        </nav>
+        <div class="hero-content">
+          <h1 class="hero-title" data-i18n="hero.title">ML & AI Engineering</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Specializing in MLOps, AI Engineering, and Cloud-Based ML Solutions</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_contact">Get In Touch</a>
+            <a href="#projects" class="btn btn-secondary" data-i18n="hero.cta_projects">View Projects</a>
+          </div>
+        </div>
+      </header>
 
-            <div class="aside-content">
-                <!--NAV-->
-                <ul class="nav">
-                    <li><a href="#home" class="active"><i class="fa fa-home"></i><b>home</b></a></li>
-                    <li><a href="#about"><i class="fa fa-user"></i><b>about me</b></a></li>
-                    <li><a href="#projects"><i class="fa fa-list"></i><b>projects</b></a></li>
-                    <li><a href="#contact"><i class="fa fa-comments"></i><b>contact</b></a></li>
-                </ul>
-
-                <!--design reference-->
-                <div class="copyright-text">
-                    <i class="fab fa-ubuntu"></i>Ubuntu based, 2022.
+      <main>
+        <section id="about" class="section about">
+          <div class="container">
+            <h2 class="section-title" data-i18n="about.title">About</h2>
+            <div class="about-content">
+              <div class="about-text">
+                <p data-i18n="about.bio">Machine Learning Engineer with expertise in building scalable ML systems and implementing MLOps practices. Currently working at Globo, previously at Neurotech [B3], with a focus on cloud-based AI solutions and automated ML workflows.</p>
+                <div class="contact-info">
+                  <p><strong data-i18n="about.location">Location:</strong> Recife, PE</p>
+                  <p><strong data-i18n="about.email">Email:</strong> <a href="mailto:yveemmanuel@gmail.com">yveemmanuel@gmail.com</a></p>
+                  <p><strong data-i18n="about.phone">Phone:</strong> (81) 987298820</p> 
+                  <p><strong data-i18n="about.linkedin">LinkedIn:</strong> <a href="https://www.linkedin.com/in/yvesemmanuel" target="_blank">linkedin.com/in/yvesemmanuel</a></p>
+                  <p><strong data-i18n="about.github">GitHub:</strong> <a href="https://github.com/yvesemmanuel" target="_blank">github.com/yvesemmanuel</a></p>
                 </div>
+              </div>
             </div>
+          </div>
+        </section>
 
+        <section id="experience" class="section experience">
+          <div class="container">
+            <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+            <div class="timeline" id="experience-timeline">
+              <!-- Experience items will be loaded here -->
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section projects">
+          <div class="container">
+            <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+            <div class="projects-grid" id="projects-grid">
+              <!-- Project cards will be loaded here -->
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section skills">
+          <div class="container">
+            <h2 class="section-title" data-i18n="skills.title">Technical Skills</h2>
+            <div class="skills-grid" id="skills-grid">
+              <!-- Skills will be loaded here -->
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact">
+          <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+            <div class="contact-content">
+              <div class="contact-form-wrapper">
+                <form id="contact-form" class="contact-form">
+                  <div class="form-group">
+                    <label for="name" data-i18n="contact.name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" data-i18n="contact.email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" data-i18n="contact.message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2025 Emmanuel Company Ltda. <span data-i18n="footer.rights">All rights reserved.</span></p>
         </div>
-
-        <div class="main-content">
-
-            <!-- home section -->
-            <section class="home section active" id="home">
-                <div class="container">
-
-                    <div class="intro">
-                        <img src="media-fonts/penguin.png" alt="Yves Emmanuel's photo">
-                        <h1>Yves Emmanuel</h1>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/yves-emmanuel-850504204/" target="_blank" aria-label="My LinkedIn account link"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://github.com/yvesemmanuel" target="_blank" aria-label="My GitHub account link"><i class="fa fa-github"></i></a>
-                            <a href="https://twitter.com/yveseemmanuel" target="_blank" aria-label="My Twitter account link"><i class="fa fa-twitter"></i></a>
-                        </div>
-                        <p>“Truth can only be found in one place: the code.” ― Robert C. Martin</p>
-                    </div>
-
-                </div>
-            </section>
-            <!-- end of home section -->
-
-            <!-- about section -->
-            <section class="about section" id="about">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="section-title padd-15">
-
-                            <h2>about me</h2>
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="about-content">
-
-                            <div class="row">
-                                <div class="about-text padd-15">
-
-                                    <h3>I'm Yves Emmanuel and <span>Web Developer</span>!</h3>
-                                    <p>Currently, I'm seeking a web developer or IT support position in Recife. Also, I'm interested in data analysis. If you think I'm a good fit, please contact me via the email below.</p>
-
-                                </div>
-                            </div>
-
-                            <div class="row">
-
-                                <div class="personal-info padd-15">
-
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Birth date : <span>May 9, 2001</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Email : <span>yefo@cin.ufpe.br</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>City : <span>Recife (PE)</span></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <div class="CVS">
-                                                <a href="media-fonts/CV - pt.pdf" target="_black" class="btn">Download CV - PT</a>
-                                                <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                                            </div>
-                                            <a href="media-fonts/CV - en.pdf" target="_black" class="btn">Download CV - EN</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="skills">
-                                    <div class="skills-title">
-                                        <h3>Hard Skills</h3>
-                                    </div>
-
-                                    <div class="row">
-
-                                        <div class="skill-item padd-15">
-                                            <p>Python: Advanced, OOP, multithreading, sockets, pandas, Seaborn, Matplotlib.</p>
-                                        </div>
-
-                                        <div class="skill-item padd-15">
-                                            <p>C++: Intermediate, OOP, data structures, algorithms.
-                                            </p>
-                                        </div>
-
-                                        <div class="skill-item padd-15">
-                                            <p>Java: Intermediate, OOP, multithreading.</p>
-                                        </div>
-
-                                        <div class="skill-item padd-15">
-                                            <p>HTML: Intermediate.</p>
-                                        </div>
-
-                                        <div class="skill-item padd-15">
-                                            <p>CSS: Beginner, Bootstrap.</p>
-                                        </div>
-
-                                        <div class="skill-item padd-15">
-                                            <p>JavaScript: Beginner.</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-
-                                <div class="certifications padd-15">
-                                    <h3 class="title">Certifications</h3>
-
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline">
-
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020
-                                                    </h6>
-
-                                                    <h4 class="timeline-title">Introduction to Data Science in Python
-                                                    </h4>
-
-                                                    <p class="timeline-text">
-                                                        Data is the new oil. Extracting useful knowledge and insights from data has amazed me since first year at college and Python has been the largest used language to treat and handle data.
-                                                    </p>
-
-                                                </div>
-                                                <!-- timeline item end -->
-
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2021
-                                                    </h6>
-
-                                                    <h4 class="timeline-title">Introduction to HTML5</h4>
-
-                                                    <p class="timeline-text">
-                                                        Back to early 2021 I decided to create a personal web page and HyperText Markup Language is the technology that defines the meaning and structure of web content.
-                                                    </p>
-
-                                                </div>
-                                                <!-- timeline item end -->
-
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2021
-                                                    </h6>
-
-                                                    <h4 class="timeline-title">Software Engineering Applied to Automotive Software</h4>
-
-                                                    <p class="timeline-text">
-                                                        This part-time course was provided by CIn-UFPE and I learned how to project, build and think about software properly. Design and code principles, project patterns, AOP, OOP and agile development was some topics I had in this course.
-                                                    </p>
-
-                                                </div>
-                                                <!-- timeline item end -->
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="education padd-15">
-                                    <h3 class="title">Education</h3>
-
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline">
-
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2014 - 2015
-                                                    </h6>
-
-                                                    <h4 class="timeline-title">Secondary School</h4>
-
-                                                    <p class="timeline-text">
-                                                        In secondary school, I had my first approach with technology through robotics. Participating in two FIRST Lego League Challenge competitions, my team won the research award in 2014. Read about this experience in the section beside.
-                                                    </p>
-
-                                                </div>
-                                                <!-- timeline item end -->
-
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020 - 2021
-                                                    </h6>
-
-                                                    <h4 class="timeline-title">Undergraduate Computer Science Bachelor
-                                                    </h4>
-
-                                                    <p class="timeline-text">
-                                                        The COVID-19 pandemic affected my first year at university. However, I could focus on my personal development and collected several online certifications at Coursera and a good semester via e-learning.
-                                                    </p>
-
-                                                </div>
-                                                <!-- timeline item end -->
-
-                                                <!-- timeline item -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020-2021
-                                                    </h6>
-
-                                                    <h4 class="timeline-title">Project Research</h4>
-
-                                                    <p class="timeline-text">
-                                                        I was a scholarship holder at BIA, an institutional politic from UFPE, in a research project to concept, prototype and build of collaborative platform - Inovaula - for public school teachers plan lessons with educational digital resources.
-                                                    </p>
-
-                                                </div>
-                                                <!-- timeline item end -->
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <!-- end of about section -->
-
-
-            <!-- project section -->
-            <section class="project section" id="projects" tabindex="0">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>projects</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <!-- project item -->
-                    <div class="project-item padd-15">
-                        <div class="project-item-inner">
-                            <div class="icon"><i class="fa fa-code"></i></div>
-                            <h4>Web Development</h4>
-                            <p>As a front-end developer, I am qualified to architect and develop websites and applications using web technologies (HTML, CSS, JavaScript). Also, I had some experience with prototype and design working on a UFPE project, so
-                                I mixed those skills to build this personal website.</p>
-                        </div>
-                    </div>
-                    <!-- project item end -->
-
-                    <!-- project item -->
-                    <div class="project-item padd-15">
-                        <div class="project-item-inner">
-                            <div class="icon"><i class="fa fa-chart-bar"></i></div>
-                            <h4>Data Analysis</h4>
-                            <p>Data science has amazed me and I've been practicing data analysis and machine learning algorithms. Using statistics concepts, I analyzed the vaccination data from Recife population with Pandas e Matplotlib (Python3 libraries).</p>
-                        </div>
-                    </div>
-                    <!-- project item end -->
-
-                    <!-- project item -->
-                    <div class="project-item padd-15">
-                        <div class="project-item-inner">
-                            <div class="icon"><i class="fa fa-play-circle"></i></div>
-                            <h4>Music Player</h4>
-                            <p>In the third semester of college, I had a Software Infraestrutcture discipline and I learned how a computer handles applications with multiple functionalities sharing data (via multithreading). The course project was a music
-                                player with all feature implementations based on threads.</p>
-                        </div>
-                    </div>
-                    <!-- project item end -->
-
-                    <!-- project item -->
-                    <div class="project-item padd-15">
-                        <div class="project-item-inner">
-                            <div class="icon"><i class="fas fa-robot"></i></div>
-                            <h4>Machine Learning</h4>
-                            <p>As I got amazed by data science, I had an English discipline focused at Fast.ai’s group course MOOC "Practical Deep Learning for Coders" that introduced me to deep learning practice through machine learning concepts. Then I
-                                build a recommendation system content-based to predict a next TV show to watch on Netflix.</p>
-                        </div>
-                    </div>
-                    <!-- project item end -->
-
-                </div>
-
-
-            </section>
-            <!-- project sections end -->
-
-            <section class="contact section" id="contact">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>contact</h2>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <!--contact-info item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>call me on</h4>
-                            <p>(81) 98729-8820</p>
-                        </div>
-                        <!--contact-info item end-->
-
-                        <!--contact-info item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>email</h4>
-                            <p>yefo@cin.ufpe.br</p>
-                        </div>
-                        <!--contact-info item end-->
-
-                    </div>
-
-                    <div class="row">
-                        <form class="contact-form padd-15" action="https://api.staticforms.xyz/submit" method="post">
-
-                            <input type="hidden" name="accessKey" value="a8f78318-25c2-42a4-b4e4-a71e2222c746">
-
-                            <input type="hidden" name="redirectTo" value="https://yvesemmanuel.github.io">
-
-                            <div class="row">
-                                <div class="form-item half-line padd-15">
-                                    <div class="form-group">
-                                        <input type="text" id="userName" name="name" class="form-control" placeholder="Name*" oninvalid="verifyName(this)" oninput="verifyName(this)" required="required">
-                                    </div>
-                                </div>
-
-                                <div class="form-item half-line padd-15">
-                                    <div class="form-group">
-                                        <input type="email" id="userEmail" name="email" class="form-control" placeholder="Email*" oninvalid="verifyEmail(this)" oninput="verifyEmail(this)" required="required">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="form-item full-line padd-15">
-                                    <div class="form-group">
-                                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject*" oninvalid="verifySubject(this)" oninput="verifySubject(this)" required="required">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="form-item full-line padd-15">
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="message" id="message" placeholder="Your Message..." oninvalid="verifyMessage(this)" oninput="verifyMessage(this)" required="required"></textarea></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="full-line padd-15">
-                                    <button type="submit" value="Submit" class="btn" id="sendBtn">Send Message</button>
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-
-                </div>
-            </section>
-
-        </div>
-
+      </footer>
     </div>
-    <!--END OF CONTENT CONTAINER-->
-
-    <script src="js/behavior.js"></script>
-
-</body>
-
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Engenheiro de Machine Learning",
+    "company": "Globo",
+    "period": "Jul 2025 -- Presente",
+    "description": [
+      "Desenvolvi um template multi-agentes com Google ADK para integração de chatbot com aplicações Slack e Teams."
+    ]
+  },
+  {
+    "title": "Engenheiro de Machine Learning",
+    "company": "Neurotech [B3]",
+    "period": "Abr 2023 -- Ago 2025",
+    "description": [
+      "Desenvolvi bibliotecas baseadas em nuvem para otimizar ciclos de vida de experimentos de ML, incorporando ferramentas de AutoML para simplificar fluxos de trabalho de cientistas de dados.",
+      "Implementei o framework de monitoramento de modelos para todos os modelos de ML da empresa, entregando relatórios de observabilidade que aprimoram a tomada de decisões do cliente e o retreinamento de modelos baseado em desvio de dados.",
+      "Automatizei fluxos de trabalho com ML usando arquitetura de orquestração escalável baseada em nuvem, garantindo o desenvolvimento e implantação de modelos seguros e eficientes.",
+      "Desenvolvi um sistema automatizado para analisar chamadas de cobrança de dívidas usando speech-to-text e agentes de NLP baseados em LLM, reduzindo significativamente o tempo de análise manual e melhorando a eficiência da operação de cobrança de um grande banco brasileiro."
+    ],
+    "reference": "https://valor.globo.com/financas/noticia/2025/06/11/com-ia-generativa-banco-bv-recupera-em-2-meses-r-8-milhes-em-crditos-atrasados.ghtml"
+  },
+  {
+    "title": "Engenheiro de Software",
+    "company": "Super NINA",
+    "period": "Set 2022 -- Abr 2023",
+    "description": [
+      "Projetei e implementei um chatbot para fornecer uma plataforma segura e amigável para denunciar assédio no WhatsApp.",
+      "Gerenciei orquestração de API serverless para processar e analisar dados de assédio urbano, otimizando fluxos de trabalho de denúncia.",
+      "Desenvolvi dashboards analíticos e soluções integradas com órgãos públicos para gerar insights acionáveis para aprimorar a segurança comunitária."
+    ]
+  },
+  {
+    "title": "Engenheiro de Software",
+    "company": "Tribunal de Contas do Estado de Pernambuco",
+    "period": "Fev 2022 -- Jan 2023",
+    "description": [
+      "Desenvolvi um framework para analisar e visualizar atrasos de pagamento em contratos públicos, ajudando auditores a priorizar supervisão em municípios de Pernambuco.",
+      "Criei um dashboard para visualizar índices de atraso, aprimorando transparência e responsabilidade.",
+      "Apresentamos [time de data mining do TCE] o framework no XIX Simpósio Brasileiro de Sistemas de Informação, destacando seu impacto na governança pública."
+    ],
+    "reference": "https://sol.sbc.org.br/index.php/sbsi_estendido/article/view/24603/24424"
+  }
+]
