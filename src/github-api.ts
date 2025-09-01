@@ -1,9 +1,9 @@
-import { GitHubRepo } from './types';
+import { GitHubRepo } from "./types";
 
 export class GitHubAPI {
-  private static readonly API_BASE = 'https://api.github.com';
-  private static readonly CACHE_KEY = 'github_cache';
-  private static readonly CACHE_DURATION = 15 * 60 * 1000; // 15 minutes
+  private static readonly API_BASE = "https://api.github.com";
+  private static readonly CACHE_KEY = "github_cache";
+  private static readonly CACHE_DURATION = 15 * 60 * 1000; 
 
   private static getFromCache(key: string): any | null {
     try {
@@ -29,7 +29,7 @@ export class GitHubAPI {
       };
       sessionStorage.setItem(`${this.CACHE_KEY}_${key}`, JSON.stringify(cacheData));
     } catch {
-      // Storage quota exceeded or not available, continue without caching
+
     }
   }
 
@@ -60,8 +60,8 @@ export class GitHubAPI {
   static extractRepoInfo(githubUrl: string): { owner: string; repo: string } | null {
     try {
       const url = new URL(githubUrl);
-      const pathParts = url.pathname.split('/').filter(Boolean);
-      
+      const pathParts = url.pathname.split("/").filter(Boolean);
+
       if (pathParts.length >= 2) {
         return {
           owner: pathParts[0],
@@ -77,10 +77,10 @@ export class GitHubAPI {
   static formatDate(dateString: string): string {
     try {
       const date = new Date(dateString);
-      return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
+      return date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric"
       });
     } catch {
       return dateString;

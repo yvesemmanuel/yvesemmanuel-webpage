@@ -1,5 +1,5 @@
-import { Profile, Experience, Project, Skills, Certification } from './types';
-import { I18n } from './i18n';
+import { Profile, Experience, Project, Skills, Certification } from "./types";
+import { I18n } from "./i18n";
 
 export class DataLoader {
   private static cache = new Map<string, any>();
@@ -24,27 +24,27 @@ export class DataLoader {
   }
 
   static async loadProfile(): Promise<Profile> {
-    return this.loadJSON<Profile>('/data/profile.json');
+    return this.loadJSON<Profile>("/data/profile.json");
   }
 
   static async loadExperience(): Promise<Experience[]> {
     const language = I18n.getCurrentLanguage();
-    const filename = language === 'pt-br' ? '/data/experience-pt-br.json' : '/data/experience.json';
+    const filename = language === "pt-br" ? "/data/experience-pt-br.json" : "/data/experience.json";
     return this.loadJSON<Experience[]>(filename);
   }
 
   static async loadProjects(): Promise<Project[]> {
     const language = I18n.getCurrentLanguage();
-    const filename = language === 'pt-br' ? '/data/projects-pt-br.json' : '/data/projects.json';
+    const filename = language === "pt-br" ? "/data/projects-pt-br.json" : "/data/projects.json";
     return this.loadJSON<Project[]>(filename);
   }
 
   static async loadSkills(): Promise<Skills> {
-    return this.loadJSON<Skills>('/data/skills.json');
+    return this.loadJSON<Skills>("/data/skills.json");
   }
 
   static async loadCertifications(): Promise<Certification[]> {
-    return this.loadJSON<Certification[]>('/data/certifications.json');
+    return this.loadJSON<Certification[]>("/data/certifications.json");
   }
 
   static clearCache(): void {

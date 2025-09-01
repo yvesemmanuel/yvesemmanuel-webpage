@@ -22,10 +22,12 @@
     "github": "GitHub:"
   },
   "experience": {
-    "title": "Experiência"
+    "title": "Experiência",
+    "view_reference": "Ver Referência"
   },
   "projects": {
-    "title": "Projetos"
+    "title": "Projetos",
+    "updated": "Atualizado em"
   },
   "skills": {
     "title": "Habilidades Técnicas",
@@ -42,18 +44,16 @@
   },
   "contact": {
     "title": "Entre em Contato",
-    "name": "Nome",
-    "email": "Email",
     "message": "Mensagem",
-    "send": "Enviar Mensagem",
-    "sending": "Enviando...",
-    "success": "Obrigado! Sua mensagem foi enviada com sucesso.",
-    "error": "Falha ao enviar mensagem. Por favor, tente novamente.",
+    "placeholder": "Conte-me sobre seu projeto, faça uma pergunta ou apenas diga olá...",
+    "send": "Enviar Mensagem WhatsApp",
     "validation": {
       "required": "Este campo é obrigatório",
-      "email_invalid": "Por favor, insira um endereço de email válido",
-      "name_short": "Nome deve ter pelo menos 2 caracteres",
       "message_short": "Mensagem deve ter pelo menos 10 caracteres"
+    },
+    "whatsapp": {
+      "greeting": "Olá! Estou entrando em contato através do seu site de portfólio.",
+      "success": "Abrindo WhatsApp para enviar sua mensagem..."
     }
   },
   "footer": {

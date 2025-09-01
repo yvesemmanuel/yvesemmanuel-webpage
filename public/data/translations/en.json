@@ -22,10 +22,12 @@
     "github": "GitHub:"
   },
   "experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "view_reference": "View Reference"
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "updated": "Updated"
   },
   "skills": {
     "title": "Technical Skills",
@@ -42,18 +44,16 @@
   },
   "contact": {
     "title": "Get In Touch",
-    "name": "Name",
-    "email": "Email",
     "message": "Message",
-    "send": "Send Message",
-    "sending": "Sending...",
-    "success": "Thank you! Your message has been sent successfully.",
-    "error": "Failed to send message. Please try again.",
+    "placeholder": "Tell me about your project, ask a question, or just say hello...",
+    "send": "Send WhatsApp Message",
     "validation": {
       "required": "This field is required",
-      "email_invalid": "Please enter a valid email address",
-      "name_short": "Name must be at least 2 characters long",
       "message_short": "Message must be at least 10 characters long"
+    },
+    "whatsapp": {
+      "greeting": "Hello! I'm reaching out from your portfolio website.",
+      "success": "Opening WhatsApp to send your message..."
     }
   },
   "footer": {

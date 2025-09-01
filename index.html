@@ -3,9 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emmanuel - ML & AI Services</title>
+    <title>ML & AI Services</title>
     <meta name="description" content="Machine Learning Engineer specializing in MLOps, AI Engineering, and cloud-based ML solutions. Experience with AWS, Python, and modern ML frameworks." />
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Yves Emmanuel - ML & AI Engineering" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://yvesemmanuel.github.io/og-image.jpg" />
+    <meta property="og:url" content="https://yvesemmanuel.github.io" />
+    <meta property="og:description" content="Machine Learning Engineer specializing in MLOps, AI Engineering, and cloud-based ML solutions. Currently at Globo, previously at Neurotech [B3]." />
+    <meta property="og:site_name" content="Yves Emmanuel Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Yves Emmanuel - ML & AI Engineering" />
+    <meta name="twitter:description" content="Machine Learning Engineer specializing in MLOps, AI Engineering, and cloud-based ML solutions." />
+    <meta name="twitter:image" content="https://yvesemmanuel.github.io/og-image.jpg" />
+    
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yves Emmanuel",
+      "jobTitle": "Machine Learning Engineer",
+      "description": "Machine Learning Engineer with expertise in building scalable ML systems and implementing MLOps practices. Currently working at Globo, previously at Neurotech [B3], with a focus on cloud-based AI solutions and automated ML workflows.",
+      "url": "https://yvesemmanuel.github.io",
+      "image": "https://yvesemmanuel.github.io/og-image.jpg",
+      "email": "yveemmanuel@gmail.com",
+      "telephone": "(81) 987298820",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Recife",
+        "addressRegion": "PE",
+        "addressCountry": "BR"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidade Federal de Pernambuco",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Recife",
+          "addressRegion": "PE",
+          "addressCountry": "BR"
+        }
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Globo"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/yvesemmanuel",
+        "https://github.com/yvesemmanuel"
+      ],
+      "knowsAbout": [
+        "Machine Learning",
+        "MLOps",
+        "Artificial Intelligence",
+        "Python",
+        "AWS",
+        "Natural Language Processing",
+        "Transformer Architecture",
+        "Software Engineering"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="app">
@@ -90,18 +155,10 @@
               <div class="contact-form-wrapper">
                 <form id="contact-form" class="contact-form">
                   <div class="form-group">
-                    <label for="name" data-i18n="contact.name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="email" data-i18n="contact.email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  <div class="form-group">
                     <label for="message" data-i18n="contact.message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="8" required placeholder="" data-i18n-placeholder="contact.placeholder"></textarea>
                   </div>
-                  <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
+                  <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send WhatsApp Message</button>
                 </form>
               </div>
             </div>

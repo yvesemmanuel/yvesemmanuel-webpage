@@ -1,6 +1,7 @@
-import { DataLoader } from '../data-loader';
-import { GitHubAPI } from '../github-api';
-import { Project } from '../types';
+import { DataLoader } from "../data-loader";
+import { GitHubAPI } from "../github-api";
+import { I18n } from "../i18n";
+import { Project } from "../types";
 
 export class ProjectsSection {
   private container: HTMLElement;
@@ -12,7 +13,7 @@ export class ProjectsSection {
   async render(): Promise<void> {
     try {
       const projects = await DataLoader.loadProjects();
-      
+
       // Load GitHub data for projects with GitHub URLs
       const projectsWithGitHubData = await Promise.all(
         projects.map(async (project) => {
@@ -32,7 +33,6 @@ export class ProjectsSection {
         })
       );
 
-      // Sort projects to show featured ones first
       const sortedProjects = projectsWithGitHubData.sort((a, b) => {
         if (a.featured && !b.featured) return -1;
         if (!a.featured && b.featured) return 1;
@@ -41,8 +41,8 @@ export class ProjectsSection {
 
       this.container.innerHTML = this.generateHTML(sortedProjects);
     } catch (error) {
-      console.error('Error loading projects data:', error);
-      this.container.innerHTML = '<p>Error loading projects data.</p>';
+      console.error("Error loading projects data:", error);
+      this.container.innerHTML = "<p>Error loading projects data.</p>";
     }
   }
 
@@ -81,7 +81,7 @@ export class ProjectsSection {
         
         ${project.githubStats ? 
           `<div class="github-stats">
-            Updated ${project.githubStats.lastUpdate}
+            ${I18n.t('projects.updated')} ${project.githubStats.lastUpdate}
           </div>` : ''
         }
       </div>
