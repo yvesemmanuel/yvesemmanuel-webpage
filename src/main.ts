@@ -1,15 +1,14 @@
 import "./style.css";
 import { ExperienceSection } from "./components/ExperienceSection";
 import { ProjectsSection } from "./components/ProjectsSection";
-import { SkillsSection } from "./components/SkillsSection";
 import { ContactForm } from "./components/ContactForm";
+import { ServicesSection } from "./components/ServicesSection";
 import { I18n } from "./i18n";
 
 class PortfolioApp {
   private experienceSection: ExperienceSection | null = null;
   private projectsSection: ProjectsSection | null = null;
-  private skillsSection: SkillsSection | null = null;
-
+  private servicesSection: ServicesSection | null = null;
   private contactForm: ContactForm | null = null;
 
   constructor() {
@@ -30,7 +29,7 @@ class PortfolioApp {
 
     const experienceContainer = document.getElementById("experience-timeline");
     const projectsContainer = document.getElementById("projects-grid");
-    const skillsContainer = document.getElementById("skills-grid");
+    const servicesContainer = document.getElementById("services-grid");
     const contactFormElement = document.getElementById("contact-form") as HTMLFormElement;
 
     if (experienceContainer) {
@@ -41,8 +40,8 @@ class PortfolioApp {
       this.projectsSection = new ProjectsSection(projectsContainer);
     }
 
-    if (skillsContainer) {
-      this.skillsSection = new SkillsSection(skillsContainer);
+    if (servicesContainer) {
+      this.servicesSection = new ServicesSection(servicesContainer);
     }
 
     if (contactFormElement) {
@@ -111,9 +110,9 @@ class PortfolioApp {
       this.showLoadingState();
 
       await Promise.all([
-        this.experienceSection?.render(),
+        this.servicesSection?.render(),
         this.projectsSection?.render(),
-        this.skillsSection?.render()
+        this.experienceSection?.render()
       ]);
 
       this.hideLoadingState();
@@ -135,9 +134,9 @@ class PortfolioApp {
 
   private showLoadingState(): void {
     const sections = [
-      "#experience-timeline",
+      "#services-grid",
       "#projects-grid",
-      "#skills-grid"
+      "#experience-timeline"
     ];
 
     sections.forEach(selector => {
@@ -155,9 +154,9 @@ class PortfolioApp {
 
   private showErrorState(): void {
     const sections = [
-      "#experience-timeline",
-      "#projects-grid",
-      "#skills-grid"
+      "#services-grid",
+      "#projects-grid", 
+      "#experience-timeline"
     ];
 
     sections.forEach(selector => {
