@@ -2,7 +2,7 @@
   {
     "title": "Engenheiro de Machine Learning",
     "company": "Globo",
-    "period": "Jul 2025 -- Presente",
+    "period": "Jul 2025 -- Atualmente",
     "description": [
       "Desenvolvi um template multi-agentes com Google ADK para integração de chatbot com aplicações Slack e Teams."
     ]
@@ -25,8 +25,8 @@
     "period": "Set 2022 -- Abr 2023",
     "description": [
       "Projetei e implementei um chatbot para fornecer uma plataforma segura e amigável para denunciar assédio no WhatsApp.",
-      "Gerenciei orquestração de API serverless para processar e analisar dados de assédio urbano, otimizando fluxos de trabalho de denúncia.",
-      "Desenvolvi dashboards analíticos e soluções integradas com órgãos públicos para gerar insights acionáveis para aprimorar a segurança comunitária."
+      "Gerenciei a orquestração de múltiplas API serverless para processar e analisar dados de assédio urbano, otimizando fluxos de trabalho de denúncia.",
+      "Desenvolvi dashboards analíticos e soluções integradas com órgãos públicos para gerar insights acionáveis que aprimoram a segurança comunitária."
     ]
   },
   {

@@ -1,6 +1,7 @@
 {
   "nav": {
     "about": "Sobre",
+    "services": "Serviços",
     "experience": "Experiência",
     "projects": "Projetos",
     "skills": "Habilidades",
@@ -10,11 +11,14 @@
     "title": "Engenharia de ML & IA",
     "subtitle": "Especialista em MLOps, Engenharia de IA e Soluções de ML Baseadas em Nuvem",
     "cta_contact": "Entre em Contato",
+    "cta_services": "Serviços",
     "cta_projects": "Ver Projetos"
   },
   "about": {
     "title": "Sobre",
-    "bio": "Engenheiro de Machine Learning com expertise em construção de sistemas de ML escaláveis e implementação de práticas de MLOps. Atualmente trabalhando na Globo, anteriormente na Neurotech [B3], com foco em soluções de IA baseadas em nuvem e fluxos de trabalho de ML automatizados.",
+    "subtitle": "Prazer em conhecer você!",
+    "bio": "Atualmente sou Engenheiro de Machine Learning com expertise em construção de sistemas de ML escaláveis e implementação de práticas de MLOps. Atualmente trabalhando na Globo, anteriormente na Neurotech [B3], com foco em soluções de IA baseadas em nuvem e fluxos de trabalho de ML automatizados.",
+    "mission": "Minha missão é construir sistemas inteligentes que fazem a diferença!",
     "location": "Localização:",
     "email": "Email:",
     "phone": "Telefone:",
@@ -22,10 +26,16 @@
     "github": "GitHub:"
   },
   "experience": {
-    "title": "Experiência"
+    "title": "Experiência",
+    "view_reference": "Ver Referência"
+  },
+  "services": {
+    "title": "Meus Serviços",
+    "intro": "Ofereço soluções especializadas em Machine Learning e IA para empresas que buscam inovação e resultados escaláveis."
   },
   "projects": {
-    "title": "Projetos"
+    "title": "Projetos",
+    "updated": "Atualizado em"
   },
   "skills": {
     "title": "Habilidades Técnicas",
@@ -41,19 +51,30 @@
     "data_engineering_desc": "Pipelines de dados escaláveis, processamento em tempo real e plataformas de analytics"
   },
   "contact": {
-    "title": "Entre em Contato",
+    "title": "Tem um Desafio de Machine Learning para Mim?",
+    "intro": "Vamos construir algo incrível juntos. Entre em contato e vamos discutir como posso ajudar sua empresa a alcançar os próximos níveis com IA.",
+    "card1_title": "📞 Conversas Rápidas",
+    "card1_desc": "Para perguntas rápidas ou uma conversa inicial",
+    "card1_btn": "WhatsApp",
+    "card2_title": "💼 Projetos Profissionais",
+    "card2_desc": "Para discussões detalhadas sobre projetos", 
+    "card2_btn": "LinkedIn",
+    "card3_title": "📧 Email Direto",
+    "card3_desc": "Para propostas formais e documentação",
+    "card3_btn": "Email",
+    "form_title": "Ou envie uma mensagem direta:",
     "name": "Nome",
     "email": "Email",
-    "message": "Mensagem",
+    "message": "Mensagem", 
+    "placeholder": "Conte-me sobre seu desafio de ML/IA...",
     "send": "Enviar Mensagem",
-    "sending": "Enviando...",
-    "success": "Obrigado! Sua mensagem foi enviada com sucesso.",
-    "error": "Falha ao enviar mensagem. Por favor, tente novamente.",
     "validation": {
       "required": "Este campo é obrigatório",
-      "email_invalid": "Por favor, insira um endereço de email válido",
-      "name_short": "Nome deve ter pelo menos 2 caracteres",
       "message_short": "Mensagem deve ter pelo menos 10 caracteres"
+    },
+    "whatsapp": {
+      "greeting": "Olá! Estou entrando em contato através do seu site de portfólio.",
+      "success": "Abrindo WhatsApp para enviar sua mensagem..."
     }
   },
   "footer": {

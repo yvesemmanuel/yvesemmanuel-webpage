@@ -1,6 +1,7 @@
 {
   "nav": {
     "about": "About",
+    "services": "Services",
     "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
@@ -10,11 +11,14 @@
     "title": "ML & AI Engineering",
     "subtitle": "Specializing in MLOps, AI Engineering, and Cloud-Based ML Solutions",
     "cta_contact": "Get In Touch",
+    "cta_services": "Services",
     "cta_projects": "View Projects"
   },
   "about": {
     "title": "About",
-    "bio": "Machine Learning Engineer with expertise in building scalable ML systems and implementing MLOps practices. Currently working at Globo, previously at Neurotech [B3], with a focus on cloud-based AI solutions and automated ML workflows.",
+    "subtitle": "Nice to meet you!",
+    "bio": "Currently I'm a Machine Learning Engineer with expertise in building scalable ML systems and implementing MLOps practices. Currently working at Globo, previously at Neurotech [B3], with a focus on cloud-based AI solutions and automated ML workflows.",
+    "mission": "My mission is building intelligent systems that make a difference!",
     "location": "Location:",
     "email": "Email:",
     "phone": "Phone:",
@@ -22,10 +26,16 @@
     "github": "GitHub:"
   },
   "experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "view_reference": "View Reference"
+  },
+  "services": {
+    "title": "My Services",
+    "intro": "I offer specialized Machine Learning and AI solutions for companies seeking innovation and scalable results."
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "updated": "Updated"
   },
   "skills": {
     "title": "Technical Skills",
@@ -41,19 +51,30 @@
     "data_engineering_desc": "Scalable data pipelines, real-time processing, and analytics platforms"
   },
   "contact": {
-    "title": "Get In Touch",
+    "title": "Got a Machine Learning Challenge for Me?",
+    "intro": "Let's build something incredible together. Get in touch and let's discuss how I can help your company reach the next level with AI.",
+    "card1_title": "📞 Quick Conversations",
+    "card1_desc": "For quick questions or an initial conversation",
+    "card1_btn": "WhatsApp",
+    "card2_title": "💼 Professional Projects", 
+    "card2_desc": "For detailed project discussions",
+    "card2_btn": "LinkedIn",
+    "card3_title": "📧 Direct Email",
+    "card3_desc": "For formal proposals and documentation",
+    "card3_btn": "Email",
+    "form_title": "Or send a direct message:",
     "name": "Name",
-    "email": "Email",
+    "email": "Email", 
     "message": "Message",
+    "placeholder": "Tell me about your ML/AI challenge...",
     "send": "Send Message",
-    "sending": "Sending...",
-    "success": "Thank you! Your message has been sent successfully.",
-    "error": "Failed to send message. Please try again.",
     "validation": {
       "required": "This field is required",
-      "email_invalid": "Please enter a valid email address",
-      "name_short": "Name must be at least 2 characters long",
       "message_short": "Message must be at least 10 characters long"
+    },
+    "whatsapp": {
+      "greeting": "Hello! I'm reaching out from your portfolio website.",
+      "success": "Opening WhatsApp to send your message..."
     }
   },
   "footer": {

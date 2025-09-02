@@ -1,5 +1,6 @@
-import { DataLoader } from '../data-loader';
-import { Experience } from '../types';
+import { DataLoader } from "../data-loader";
+import { I18n } from "../i18n";
+import { Experience } from "../types";
 
 export class ExperienceSection {
   private container: HTMLElement;
@@ -13,8 +14,8 @@ export class ExperienceSection {
       const experiences = await DataLoader.loadExperience();
       this.container.innerHTML = this.generateHTML(experiences);
     } catch (error) {
-      console.error('Error loading experience data:', error);
-      this.container.innerHTML = '<p>Error loading experience data.</p>';
+      console.error("Error loading experience data:", error);
+      this.container.innerHTML = "<p>Error loading experience data.</p>";
     }
   }
 
@@ -31,7 +32,7 @@ export class ExperienceSection {
             <ul>
               ${exp.description.map(desc => `<li>${desc}</li>`).join('')}
             </ul>
-            ${exp.reference ? `<p><a href="${exp.reference}" target="_blank" rel="noopener noreferrer">View Reference →</a></p>` : ''}
+            ${exp.reference ? `<p><a href="${exp.reference}" target="_blank" rel="noopener noreferrer">${I18n.t('experience.view_reference')} →</a></p>` : ''}
           </div>
         </div>
       </div>

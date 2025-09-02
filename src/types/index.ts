@@ -51,3 +51,12 @@ export interface GitHubRepo {
   stargazers_count: number;
   updated_at: string;
 }
+
+export interface Service {
+  id: string;
+  title: string;
+  icon: string;
+  description: string;
+  features: string[];
+  ctaText: string;
+}

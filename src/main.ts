@@ -1,15 +1,14 @@
-import './style.css';
-import { ExperienceSection } from './components/ExperienceSection';
-import { ProjectsSection } from './components/ProjectsSection';
-import { SkillsSection } from './components/SkillsSection';
-import { ContactForm } from './components/ContactForm';
-import { I18n } from './i18n';
+import "./style.css";
+import { ExperienceSection } from "./components/ExperienceSection";
+import { ProjectsSection } from "./components/ProjectsSection";
+import { ContactForm } from "./components/ContactForm";
+import { ServicesSection } from "./components/ServicesSection";
+import { I18n } from "./i18n";
 
 class PortfolioApp {
   private experienceSection: ExperienceSection | null = null;
   private projectsSection: ProjectsSection | null = null;
-  private skillsSection: SkillsSection | null = null;
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  private servicesSection: ServicesSection | null = null;
   private contactForm: ContactForm | null = null;
 
   constructor() {
@@ -17,9 +16,9 @@ class PortfolioApp {
   }
 
   private async init(): Promise<void> {
-    // Initialize translations first
+
     await I18n.init();
-    
+
     this.initializeComponents();
     this.setupNavigation();
     this.setupLanguageSwitching();
@@ -27,11 +26,11 @@ class PortfolioApp {
   }
 
   private initializeComponents(): void {
-    // Initialize sections
-    const experienceContainer = document.getElementById('experience-timeline');
-    const projectsContainer = document.getElementById('projects-grid');
-    const skillsContainer = document.getElementById('skills-grid');
-    const contactFormElement = document.getElementById('contact-form') as HTMLFormElement;
+
+    const experienceContainer = document.getElementById("experience-timeline");
+    const projectsContainer = document.getElementById("projects-grid");
+    const servicesContainer = document.getElementById("services-grid");
+    const contactFormElement = document.getElementById("contact-form") as HTMLFormElement;
 
     if (experienceContainer) {
       this.experienceSection = new ExperienceSection(experienceContainer);
@@ -41,8 +40,8 @@ class PortfolioApp {
       this.projectsSection = new ProjectsSection(projectsContainer);
     }
 
-    if (skillsContainer) {
-      this.skillsSection = new SkillsSection(skillsContainer);
+    if (servicesContainer) {
+      this.servicesSection = new ServicesSection(servicesContainer);
     }
 
     if (contactFormElement) {
@@ -51,36 +50,34 @@ class PortfolioApp {
   }
 
   private setupNavigation(): void {
-    // Smooth scroll for navigation links
-    const navLinks = document.querySelectorAll('.nav-link');
+
+    const navLinks = document.querySelectorAll(".nav-link");
     navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
+      link.addEventListener("click", (e) => {
         e.preventDefault();
-        const href = link.getAttribute('href');
-        if (href && href.startsWith('#')) {
+        const href = link.getAttribute("href");
+        if (href && href.startsWith("#")) {
           const target = document.querySelector(href);
           if (target) {
             target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
+              behavior: "smooth",
+              block: "start"
             });
           }
         }
       });
     });
 
-    // Update navigation on scroll
-    window.addEventListener('scroll', this.updateActiveNavLink.bind(this));
+    window.addEventListener("scroll", this.updateActiveNavLink.bind(this));
 
-    // Add scroll effect to navigation bar
-    window.addEventListener('scroll', this.handleNavScroll.bind(this));
+    window.addEventListener("scroll", this.handleNavScroll.bind(this));
   }
 
   private updateActiveNavLink(): void {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    let currentSection = '';
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    let currentSection = "";
     sections.forEach(section => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= 100 && rect.bottom >= 100) {
@@ -89,97 +86,92 @@ class PortfolioApp {
     });
 
     navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${currentSection}`) {
-        link.classList.add('active');
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSection}`) {
+        link.classList.add("active");
       }
     });
   }
 
   private handleNavScroll(): void {
-    const nav = document.querySelector('.nav') as HTMLElement;
+    const nav = document.querySelector(".nav") as HTMLElement;
     if (window.scrollY > 100) {
-      nav.style.background = 'rgba(255, 255, 255, 0.98)';
-      nav.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+      nav.style.background = "rgba(255, 255, 255, 0.98)";
+      nav.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)";
     } else {
-      nav.style.background = 'rgba(255, 255, 255, 0.95)';
-      nav.style.boxShadow = 'none';
+      nav.style.background = "rgba(255, 255, 255, 0.95)";
+      nav.style.boxShadow = "none";
     }
   }
 
   private async loadContent(): Promise<void> {
     try {
-      // Show loading state
+
       this.showLoadingState();
 
-      // Load all sections in parallel for better performance
       await Promise.all([
-        this.experienceSection?.render(),
+        this.servicesSection?.render(),
         this.projectsSection?.render(),
-        this.skillsSection?.render()
+        this.experienceSection?.render()
       ]);
 
-      // Hide loading state
       this.hideLoadingState();
 
     } catch (error) {
-      console.error('Error loading portfolio content:', error);
+      console.error("Error loading portfolio content:", error);
       this.showErrorState();
     }
   }
 
   private setupLanguageSwitching(): void {
-    // Set up language switcher buttons
+
     I18n.setupLanguageSwitcher();
-    
-    // Listen for language change events
-    document.addEventListener('languageChanged', async () => {
+
+    document.addEventListener("languageChanged", async () => {
       await this.loadContent();
     });
   }
 
   private showLoadingState(): void {
     const sections = [
-      '#experience-timeline',
-      '#projects-grid',
-      '#skills-grid'
+      "#services-grid",
+      "#projects-grid",
+      "#experience-timeline"
     ];
 
     sections.forEach(selector => {
       const element = document.querySelector(selector);
       if (element) {
-        element.innerHTML = `<div class="loading">${I18n.t('common.loading')}</div>`;
+        element.innerHTML = `<div class="loading">${I18n.t("common.loading")}</div>`;
       }
     });
   }
 
   private hideLoadingState(): void {
-    const loadingElements = document.querySelectorAll('.loading');
+    const loadingElements = document.querySelectorAll(".loading");
     loadingElements.forEach(element => element.remove());
   }
 
   private showErrorState(): void {
     const sections = [
-      '#experience-timeline',
-      '#projects-grid',
-      '#skills-grid'
+      "#services-grid",
+      "#projects-grid", 
+      "#experience-timeline"
     ];
 
     sections.forEach(selector => {
       const element = document.querySelector(selector);
-      if (element && element.innerHTML.includes('Loading...')) {
-        element.innerHTML = '<div class="error">Error loading content. Please refresh the page.</div>';
+      if (element && element.innerHTML.includes("Loading...")) {
+        element.innerHTML = "<div class='error'>Error loading content. Please refresh the page.</div>";
       }
     });
   }
 }
 
-// Initialize the app when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   new PortfolioApp();
 });
 
-// Add some additional CSS for loading and error states
 const additionalStyles = `
   .loading {
     text-align: center;
@@ -233,7 +225,7 @@ const additionalStyles = `
     html {
       scroll-behavior: auto;
     }
-    
+
     * {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
@@ -242,7 +234,6 @@ const additionalStyles = `
   }
 `;
 
-// Inject additional styles
-const styleElement = document.createElement('style');
+const styleElement = document.createElement("style");
 styleElement.textContent = additionalStyles;
 document.head.appendChild(styleElement);
