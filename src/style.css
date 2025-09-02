@@ -300,11 +300,16 @@ body {
   width: 280px;
   height: 350px;
   object-fit: cover;
+  object-position: center;
   border-radius: var(--radius-xl);
   margin: 0 auto;
   display: block;
   box-shadow: var(--shadow-lg);
   border: 4px solid var(--white);
+  /* Maintain aspect ratio on smaller screens */
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4/5; /* Maintain consistent aspect ratio */
 }
 
 .profile-placeholder {
@@ -900,7 +905,8 @@ body {
   
   .profile-photo {
     width: 200px;
-    height: 250px;
+    height: auto;
+    aspect-ratio: 4/5;
   }
   
   .profile-placeholder {

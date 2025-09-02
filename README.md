@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my experience in Machine Learning Engineering, MLOps, and AI solutions.
 
-**Live Website**: [yvesemmanuel.github.io](https://yvesemmanuel.github.io/)
+**Live Website**: [yvesemmanuel.vercel.app](https://yvesemmanuel.vercel.app/)
 
 ## 🚀 Features
 

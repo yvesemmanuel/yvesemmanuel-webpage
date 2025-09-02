@@ -1,0 +1,38 @@
+{
+  "name": "Emmanuel - ML & AI Engineering Services",
+  "short_name": "Emmanuel ML",
+  "description": "Machine Learning Engineer specializing in MLOps, AI Engineering, and Cloud ML Solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e40af",
+  "lang": "pt-BR",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": [
+    "business",
+    "productivity",
+    "developer",
+    "technology"
+  ],
+  "screenshots": [
+    {
+      "src": "/data/me_full.png",
+      "sizes": "280x350",
+      "type": "image/png",
+      "label": "Emmanuel - Machine Learning Engineer"
+    }
+  ]
+}
